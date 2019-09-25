@@ -26,7 +26,7 @@ struct ThumbnailGenerator {
         }
     }
     
-    static func createThumbnail(with icon: ThumbnailIcon) -> UNNotificationAttachment? {
+    /*static func createThumbnail(with icon: ThumbnailIcon) -> UNNotificationAttachment? {
         let name = "thumbnail"
         let thumbnailFrame = CGRect(x: 0, y: 0, width: 150, height: 150)
         let thumbnail = UIView(frame: thumbnailFrame)
@@ -46,7 +46,7 @@ struct ThumbnailGenerator {
             return nil
         }
         
-    }
+    }*/
     
     private static var logPrefix: String {
         return "\(String(describing: SwiftWorkmanagerPlugin.self)) - \(ThumbnailGenerator.self)"
