@@ -1,5 +1,4 @@
 #import "WorkmanagerPlugin.h"
-#import <workmanager/workmanager-Swift.h>
 
 @implementation WorkmanagerPlugin
 
