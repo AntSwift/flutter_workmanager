@@ -78,20 +78,6 @@ private extension UIView {
 
 private extension UIImage {
     
-    func persist(fileName: String, in directory: URL = URL(fileURLWithPath: NSTemporaryDirectory())) throws -> URL {
-        let directoryURL = directory.appendingPathComponent(SwiftWorkmanagerPlugin.identifier, isDirectory: true)
-        let fileURL = directoryURL.appendingPathComponent("\(fileName).png")
-        try FileManager.default.createDirectory(at: directoryURL, withIntermediateDirectories: true, attributes: nil)
-        guard let imageData = self.UIImagePNGRepresentation() else {
-            throw error.cannotRepresentAsPNG(self)
-        }
-        try imageData.write(to: fileURL)
-        
-        return fileURL
-    }
-    
-    enum error: Error {
-        case cannotRepresentAsPNG(UIImage)
-    }
+    //
     
 }
