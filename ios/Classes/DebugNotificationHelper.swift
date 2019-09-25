@@ -58,9 +58,9 @@ struct DebugNotificationHelper {
         notification.title = title
         notification.body = body
         notification.threadIdentifier = threadIdentifier
-        if let thumbnail = ThumbnailGenerator.createThumbnail(with: icon) {
-            notification.attachments = [thumbnail]
-        }
+        //if let thumbnail = ThumbnailGenerator.createThumbnail(with: icon) {
+        //    notification.attachments = [thumbnail]
+        //}
         let immediateFutureTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
         let notificationRequest = UNNotificationRequest(identifier: identifier, content: notification, trigger: immediateFutureTrigger)
         
