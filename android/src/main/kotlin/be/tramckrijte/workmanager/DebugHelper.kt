@@ -18,7 +18,7 @@ object ThumbnailGenerator {
                 else -> "\uD83D\uDD25"
             }
 
-    val workEmoji get() = listOf("\uD83D\uDC77\u200D♀️", "\uD83D\uDC77\u200D♂️").random()
+    val workEmoji get() = "\uD83D\uDC77\u200D♂️"
 }
 
 object DebugHelper {
